@@ -52,7 +52,7 @@ def process_emails():
     send_time_str = time_entry.get()
     reminder_time_str = reminder_time_entry.get()
     
-    # Validate time format
+   
     try:
         send_time = datetime.strptime(send_time_str, "%H:%M").time()
         reminder_time = datetime.strptime(reminder_time_str, "%H:%M").time()
